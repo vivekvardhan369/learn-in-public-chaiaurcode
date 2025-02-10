@@ -40,7 +40,7 @@ for(let i=0;i<teas.length;i++){
     if(teas[i]!=="Herbal Tea")
         caffeinatedMyTeas++
 }
-console.log(caffeinatedMyTeas);
+console.log(caffeinatedMyTeas)
 
 
 // Problem : Use a for loop to create a new array with all tea names in uppercase.
