@@ -26,7 +26,7 @@ if (!Array.prototype.myFilter) {
 const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
 
 const newWords = words.myFilter(value => value.length > 6);
-console.log(newWords); 
+// console.log(newWords); 
 
 // 2. Map method
 
@@ -53,7 +53,7 @@ if(!Array.prototype.myMap){
 
 const arr1=[1,44,9,26,23]
 const newArr=arr1.myMap(e=>e*2)
-console.log(newArr);
+// console.log(newArr);
 
 //3. forEach() method
 
@@ -74,12 +74,64 @@ if(!Array.prototype.myforEach){
 }
 
 
-const arr4=['Electronis','Fashion','Footware']
+const arr2=['Electronis','Fashion','Footware']
 
-const res=arr4.myforEach((value,index) =>{
-   console.log(`[${index}] ${value}`) 
-})
-console.log(res);
+// const res=arr2.myforEach((value,index) =>{
+//    console.log(`[${index}] ${value}`) 
+// })
+// console.log(res);
+
+// 4. at()
+// Signature of at method :-
+// 1. Iterates over every element in an array
+// 2. Returns the element present at a specified index
+
+//Polyfill for At() method
+if(!Array.prototype.myAt){
+    Array.prototype.myAt=function(index){
+        for(let i=0;i<this.length;i++){
+            if(i==index){
+                return this[i]
+            }
+        }
+
+    }
+}
+
+const arr3 = [5,15,589,56,78]
+let index=3
+
+const res=console.log(arr3.myAt(index));
+
+// 4. concat()
+// Signature of concat method :-
+// 1. Iterates over every element in an array
+// 2. Returns a new array by merging two or more arrays
+
+//Polyfill for concat method
+if(!Array.prototype.Myconcat){
+    Array.prototype.Myconcat=function(...arrs){
+        let result=[...this]
+        for(let arr of arrs){
+            if(Array.isArray(arr)){
+                result.push(...arr)
+            }else{
+                result.push(arr)
+            }
+        }
+        return result
+    }
+}
+
+const array1 = ["a", "b", "c"];
+const array2 = ["d", "e", "f"];
+const singleElement = "g";
+
+const arr4 = array1.Myconcat(array2, singleElement);
+console.log(arr4);
+
+
+
 
 
 
