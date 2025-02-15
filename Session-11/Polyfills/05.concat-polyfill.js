@@ -1,4 +1,4 @@
-// 4. concat()
+// 5. concat()
 // Signature of concat method :-
 // 1. Iterates over every element in an array
 // 2. Returns a new array by merging two or more arrays

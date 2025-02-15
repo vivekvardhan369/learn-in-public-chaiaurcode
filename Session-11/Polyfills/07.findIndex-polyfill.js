@@ -1,20 +1,4 @@
-// Machine Coding Round
-// Polyfill =>Fallback/Backup Function
-
-const arr=[1,12,5,25,65]
-
-
-const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
-
-
-
-
-
-
- 
-
-  
-// 6. FindIndex() method
+// 7. FindIndex() method
 
 //Signature of FindIndex()
 // 1. It iteretes over every element in array.
@@ -38,13 +22,9 @@ if(!Array.prototype.myFindIndex){
 
 const array= [5,12,130,8,44]
 
-// const  LargerNumber= (value)=> value>13
-// console.log(LargerNumber);
-
-
+const  LargerNumber= (value)=> value>13
+console.log(LargerNumber);
 const LargerNum=array.myFindIndex((value,index)=>value>13);
-// console.log(LargerNum); 
-
-
+console.log(LargerNum); 
 
 

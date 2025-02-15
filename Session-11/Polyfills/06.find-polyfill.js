@@ -1,4 +1,4 @@
-//5. Find() Method
+//6. Find() Method
 // Signature of Find() method
 //1. Iterates over every element in array.
 //2. It take two arguments value and index.

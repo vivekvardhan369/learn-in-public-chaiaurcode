@@ -1,15 +1,14 @@
-//3. forEach() method
+// 3. forEach() method
 
-//Signature of forEach Method:
+// Signature
+// 1. It iterates over every element on the array,
+// 2. It takes two arguments element, index
+// 3. It calls a provided callbackFn once for each element in ascending-index order.
+// 4. There is no way to stop or break a forEach() loop other than by throwing an exception. If you need such behavior, the forEach() method is the wrong tool.
 
-// 1. It iterates over every element in the array.
-// 2. It take two arguments element and index.
-// 3. It executes a provided function once for each array element.
-
-//Polyfill for forEach() function
-
-if(!Array.prototype.myforEach){
-    Array.prototype.myforEach= function (userFn){
+//Polyfill for forEach() method
+if(!Array.prototype.myForEach){
+    Array.prototype.myForEach= function (userFn){
         for(let i=0;i<this.length;i++){
             userFn(this[i],i)
         }
@@ -17,9 +16,13 @@ if(!Array.prototype.myforEach){
 }
 
 
-const arr2=['Electronis','Fashion','Footware']
+let teaCollection = ["earl grey", "green tea", "chai", "oolong tea"];
+let availableTeas=[]
+teaCollection.myForEach((tea)=>{
+    if(tea==="chai"){
+        return
+    }
+    availableTeas.push(tea)
 
-const res=arr2.myforEach((value,index) =>{
-   console.log(`[${index}] ${value}`) 
 })
-console.log(res);
+console.log(availableTeas);
