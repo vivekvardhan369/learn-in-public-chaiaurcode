@@ -1,0 +1,24 @@
+/* style.css */
+
+/* Body background (foot on scale) */
+body {
+    background: url('https://img.freepik.com/free-photo/close-up-legs-weight-machine_23-2149177672.jpg?t=st=1739967683~exp=1739971283~hmac=8951f0d469ce625c2428f7ea45a29a9732e4947cd5698920a5e39546ecbfe20e&w=900') 
+      no-repeat center center/cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  
+  /* Result text styling */
+  #result {
+    min-height: 2rem;
+  }
+  
