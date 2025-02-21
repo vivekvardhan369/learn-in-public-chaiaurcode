@@ -1,0 +1,23 @@
+
+body{
+            background-image: url('https://img.freepik.com/free-photo/closeup-shot-entrepreneur-working-from-home-his-personal-finances-savings_181624-16906.jpg?uid=R183656907&ga=GA1.1.1578329696.1739622775&semt=ais_hybrid');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+}
+
+.card-header{
+            background-color: #0d6efd;
+            color: #000;
+            font-size: 20px;
+            font-weight: bold;
+}
+input[type="range"]{
+            width: 90%;
+}
+
+input[type="text"]{
+            width: 40%;
+}
+  

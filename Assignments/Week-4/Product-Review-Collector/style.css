@@ -1,0 +1,54 @@
+body {
+    background-image: url('https://img.freepik.com/free-vector/reviews-concept-landing-page_52683-12186.jpg?t=st=1740133209~exp=1740136809~hmac=716d1de22d4bc7806524500ef5c17a8a884ba7211d52928a869fe59cc20ab18a&w=1060');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Light mode styling */
+body.bg-light {
+    color: #212529;
+}
+
+.review-box {
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white */
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Cards styling for existing reviews */
+.review-card {
+    background-color: rgba(49, 154, 240, 0.7); /* Transparent blue */
+    border-radius: 20px;
+    padding: 8px;
+    color: #fff;
+    height: 160px;
+    text-align: left;
+}
+
+/* Dark mode styling */
+body.bg-dark {
+    color: #fff;
+}
+
+body.bg-dark .review-box {
+    background-color: rgba(31, 31, 31, 0.7); /* Transparent black */
+}
+
+body.bg-dark .review-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+}
+
+.checked {
+    color: gold;
+}
+
+#star-rating .bi {
+    cursor: pointer;
+}
+
+#star-rating .bi:hover,
+#star-rating .bi:hover ~ .bi {
+    color: gold;
+}

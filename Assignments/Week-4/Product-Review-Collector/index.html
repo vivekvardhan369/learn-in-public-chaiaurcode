@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review & Rating Collector</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module"></script>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid mt-5">
+            <div class="row">
+                <!-- Left Column: Review Form -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm review-box">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="card-title mb-0">Product Review & Rating Collector</h3>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="theme-toggle" checked>
+                                <label class="form-check-label text-white" for="theme-toggle">Dark Mode</label>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form id="review-form">
+                                <div class="mb-3">
+                                    <label for="user-name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="user-name" placeholder="Your name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="review-input" class="form-label">Review</label>
+                                    <textarea class="form-control" id="review-input" rows="3" placeholder="Your review"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Rating</label>
+                                    <div id="star-rating" class="d-flex gap-2">
+                                        <i id="one-star" class="bi bi-star"></i>
+                                        <i id="two-star" class="bi bi-star"></i>
+                                        <i id="three-star" class="bi bi-star"></i>
+                                        <i id="four-star" class="bi bi-star"></i>
+                                        <i id="five-star" class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <button type="button" id="submit-review" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column: Existing Reviews -->
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <div id="review-list" class="row mt-4">
+                        <!-- All reviews will be displayed here -->
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
